@@ -16,13 +16,13 @@ deoni = Personi("Deoni")
 gerti.fol("Unë jam ma i miri")
 amanti.fol("Unë jam tu i ngjeh centat")
 deoni.fol("Po më hahet ni hamburger")
-
+print()
 print("Emri i nxenesit te pare", gerti.getEmri())
 print("Emri i nxenesit te dyte", amanti.getEmri())
 print("Emri i nxenesit te trete", deoni.getEmri())
 
 print()
 
-def greetPerson(name):
+def greet_person(name):
     print("Hello", name)
-greetPerson("Dren")
+greet_person("Dren")
