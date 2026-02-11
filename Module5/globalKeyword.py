@@ -1,9 +1,11 @@
+from Module5.functionsAL import printoje
+
 griting = "Hello"
 def grit(nejm):
     global mesejxh
     mesejxh = f"{griting}, {nejm}"
-    print(mesejxh)
+    printoje(mesejxh)
 grit("Dren")
-print(mesejxh)
+printoje(mesejxh)
 mesejxh = f"{griting}, student!"
-print(mesejxh)
+printoje(mesejxh)

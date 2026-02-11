@@ -1,4 +1,6 @@
+from Module5.functionsAL import printoje
+
 def grit(nejm):
     mesejxh = f"Hello, {nejm}"
-    print(mesejxh)
+    printoje(mesejxh)
 grit("Dren")

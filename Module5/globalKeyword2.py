@@ -1,3 +1,5 @@
+from Module5.functionsAL import printoje
+
 griting = "Pershnetje"
 nejm = "Dren"
 
@@ -6,7 +8,7 @@ def grit():
     griting = "Gudbaj"
     nejm = "Dren"
     mesejxh = f"{griting}, {nejm}"
-    print(mesejxh)
+    printoje(mesejxh)
 grit()
-print(griting)
-print(nejm)
+printoje(griting)
+printoje(nejm)
