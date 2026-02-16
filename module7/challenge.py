@@ -26,4 +26,4 @@ try:
 except Exception:
     print("An error has ocurred!")
 finally:
-    print("No error has ocurred while trying to run this program")
+    print()
