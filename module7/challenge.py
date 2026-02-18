@@ -1,6 +1,3 @@
-from select import error
-
-
 def calculate(number1, number2, operator):
     if operator == "+":
         return number1 + number2
@@ -26,4 +23,4 @@ try:
 except Exception:
     print("An error has ocurred!")
 finally:
-    print()
+    print("Program has ended")
