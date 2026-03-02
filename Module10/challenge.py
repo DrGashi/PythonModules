@@ -47,3 +47,4 @@ class DS_Prishtina(DigitalSchool):
     def __init__(self, name, city, state, courses, student_number):
         super().__init__(name, city, state, courses)
         self.__student_number = student_number
+    def SCF
