@@ -74,7 +74,7 @@ class Ds_Prizren(DigitalSchool):
     def print_houses(self):
         print(f"{self.name} has the following houses: Hipsters, Engineers, Shadows and Speedsters")
 
-ds_prsh = Ds_Prishtina("Digital School Prishtina", "Prishtina", "Kosovo", "Python", 10000)
+ds_prsh = Ds_Prishtina("Digital School Prishtina", "Prishtina", "Kosovo", ["HTML & CSS", "Python", "PHP"], 10000)
 
 ds_prsh.SCF()
 ds_prsh.organize_hackathon()
