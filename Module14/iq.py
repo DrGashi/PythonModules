@@ -12,7 +12,7 @@ avg_iq = avg_iq.sort_values(by="iq", ascending=False)
 
 print(avg_iq)
 
-map = pl.choropleth(
+iq_map = pl.choropleth(
     avg_iq,
     locations="country",
     locationmode="country names",
@@ -21,4 +21,4 @@ map = pl.choropleth(
     color_continuous_scale="Viridis"
 )
 
-map.show()
+iq_map.show()
