@@ -5,7 +5,7 @@ df = pd.read_csv('weather_tokyo_data.csv')
 
 average_weather = round(df["temperature"].mean(), 2)
 print(average_weather)
-df["month"] = df["day"].str.split("/").str[0]
+df["month"] = df["day"].str.split("/").str[0].astype(int)
 average_per_month = df.groupby("month")["temperature"].mean()
 print(round(average_per_month, 2))
 max_temp = df["temperature"].max()
