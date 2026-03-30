@@ -1,8 +1,9 @@
 import streamlit as st
+age = st.number_input("Enter your age")
 
-if st.number_input("Enter your age") >= 18:
+if age >= 18:
     person = "Adult"
-elif 0 <= st.number_input("Enter your age") < 18:
+elif 0 <= age < 18:
     person = "Child"
 else:
     st.error("Please enter a valid age")
