@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 import database
 import models
 from models import Recipe, RecipeCreate
+import streamlit as st
 
 app = FastAPI()
 @app.get("/")

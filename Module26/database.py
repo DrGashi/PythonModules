@@ -52,7 +52,7 @@ def read_recipe(recipe_id: int):
 def update_recipe(recipe_id: int, recipe: RecipeCreate) -> bool:
     connection = create_connection()
     cursor = connection.cursor()
-    cursor.execute("UPDATE recipes SET recipe=?, category=? ", (recipe.recipe, recipe.category, recipe_id))
+    cursor.execute("UPDATE recipes SET recipe=?, category=? WHERE id=?", (recipe.recipe, recipe.category, recipe_id))
     connection.commit()
     connection.close()
     updated = cursor.rowcount
