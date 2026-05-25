@@ -21,7 +21,7 @@ def read_recipe(recipe_id: int):
         raise HTTPException(status_code=404, detail="Recipe Not Found")
     return recipe
 
-@app.put("/recipe/", response_model=Recipe)
+@app.put("/recipes/", response_model=Recipe)
 def update_recipe(recipe_id: int, recipe: RecipeCreate):
     updated = database.update_recipe(recipe_id, recipe)
     if not updated:
@@ -29,7 +29,7 @@ def update_recipe(recipe_id: int, recipe: RecipeCreate):
     return models.Recipe(id=recipe_id, **recipe.dict())
 
 
-@app.delete("/recipe/", response_model=Recipe)
+@app.delete("/recipes/", response_model=Recipe)
 def delete_recipe(recipe_id: int):
     deleted = database.delete_recipe(recipe_id)
     if not deleted:
